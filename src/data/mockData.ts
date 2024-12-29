@@ -286,7 +286,7 @@ export const mockProviders: Provider[] = [
       • Model fine-tuning
       • Easy deployment
     `,
-    website: 'https://openailike.com',
+    website: 'https://sdk.vercel.ai/docs/introduction',
     baseModels: ['ANY'],
     downloads: 2456,
     configTemplate: {
