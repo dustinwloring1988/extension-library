@@ -54,8 +54,8 @@ export const mockStarters: Starter[] = [
   },
   {
     id: '3',
-    name: '@Web Blog Template',
-    description: 'A modern, feature-rich blog template built with Next.js and Tailwind CSS',
+    name: 'DEMOWeb Blog Template',
+    description: 'DEMO A modern, feature-rich blog template built with Next.js and Tailwind CSS',
     longDescription: `A professional blog template that includes:
     • SEO optimization with meta tags and schema markup
     • Responsive design for all devices
