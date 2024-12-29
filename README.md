@@ -34,10 +34,6 @@ We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) f
 
 Check out our [FAQ](FAQ.md) for answers to common questions.
 
-## 🔒 Security
-
-If you discover any security-related issues, please email security@extension-library.com instead of using the issue tracker.
-
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
@@ -48,17 +44,18 @@ If you find this project useful, please consider giving it a ⭐️ on GitHub!
 
 ## 📬 Contact
 
-Dustin Loring - [@dustinwloring](https://twitter.com/dustinwloring)
+Dustin Loring - [@dustinwloring88](https://twitter.com/dustinwloring88)
 
 Project Link: [https://github.com/dustinwloring1988/extension-library](https://github.com/dustinwloring1988/extension-library)
 
 ## 🗺️ Roadmap
 
 - [ ] Additional utility functions
-- [ ] Browser support
 - [ ] Performance optimizations
 - [ ] More comprehensive documentation
 - [ ] Additional framework integrations
+- [ ] More Promtps
+- [ ] More Templates
 
 ## 🏆 Acknowledgments
 
