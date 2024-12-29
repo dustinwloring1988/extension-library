@@ -30,8 +30,7 @@ export const mockStarters: Starter[] = [
     preview: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=800&q=80',
     createdAt: '2024-12-29',
     repoUrl: 'https://github.com/dustinwloring1988/twitter-clone'
-  },
-  /*
+  }/*,
   {
     id: '2',
     name: 'Restaurant Starter',
@@ -122,7 +121,6 @@ export const mockStarters: Starter[] = [
     createdAt: '2024-12-29',
     repoUrl: 'https://github.com/bolt-starter-templates/chatty'
   },
-  */
   {
     id: '5',
     name: 'Todo App',
@@ -183,6 +181,7 @@ export const mockStarters: Starter[] = [
     createdAt: '2024-12-29',
     repoUrl: 'https://github.com/bolt-starter-templates/social-starter'
   }
+  */
 ];
 
 export const mockPrompts: Prompt[] = [
