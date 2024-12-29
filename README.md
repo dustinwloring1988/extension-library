@@ -22,21 +22,6 @@ A comprehensive collection of JavaScript/TypeScript utilities and extensions to 
 - Node.js 14.x or higher
 - npm 6.x or higher
 
-## 🔧 Installation
-
-```bash
-npm install extension-library
-```
-
-## 🎯 Quick Start
-
-```javascript
-import { someExtension } from 'extension-library';
-
-// Use the extension
-const result = someExtension();
-```
-
 ## 📖 Documentation
 
 For detailed documentation, please visit our [documentation](../../docs) section.
