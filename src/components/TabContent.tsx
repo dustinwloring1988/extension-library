@@ -93,12 +93,14 @@ export function TabContent({ activeTab }: TabContentProps) {
         ))}
         
         {activeTab === 'providers' && (
-          <div className="col-span-3 text-center py-12">
-            <h3 className="text-xl font-semibold text-gray-400 mb-2 relative inline-flex items-center">
-              Providers
-              <span className="ml-2 text-[10px] bg-purple-600 text-white px-1 rounded">Soon</span>
-            </h3>
-            <p className="text-gray-500">We're working on integrating more AI providers. Stay tuned!</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {mockProviders.map((provider) => (
+              <ProviderCard
+                key={provider.id}
+                provider={provider}
+                onDownload={handleDownload}
+              />
+            ))}
           </div>
         )}
         

@@ -8,7 +8,7 @@ interface TabNavigationProps {
 }
 
 export function TabNavigation({ activeTab, onTabChange, tabs }: TabNavigationProps) {
-  const isDisabled = (tab: string) => ['providers', 'models'].includes(tab);
+  const isDisabled = (tab: string) => ['models'].includes(tab);
 
   return (
     <div className="border-b border-gray-800">

@@ -274,6 +274,29 @@ export const mockProviders: Provider[] = [
     configTemplate: {
       baseUrl: 'http://localhost:1234'
     }
+  },
+  {
+    id: '3',
+    name: 'OpenAI',
+    description: 'Access state-of-the-art language models through OpenAI\'s API.',
+    longDescription: `
+      Industry-leading AI models and capabilities:
+      • GPT-4 and GPT-3.5 Turbo
+      • Advanced reasoning
+      • Code generation
+      • Natural language processing
+      • Context-aware responses
+      • API integration
+      • Fine-tuning options
+      • Enterprise-grade reliability
+    `,
+    website: 'https://openai.com',
+    baseModels: ['GPT-4', 'GPT-3.5 Turbo'],
+    downloads: 2456,
+    configTemplate: {
+      apiKey: 'YOUR_API_KEY',
+      organization: 'YOUR_ORG_ID' // Optional
+    }
   }
 ];
 
