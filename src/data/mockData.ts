@@ -28,7 +28,7 @@ export const mockStarters: Starter[] = [
     downloads: 856,
     author: 'dustinwloring1988',
     preview: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=800&q=80',
-    createdAt: '2024-03-15',
+    createdAt: '2024-12-29',
     repoUrl: 'https://github.com/dustinwloring1988/twitter-clone'
   },
   {
@@ -58,7 +58,7 @@ export const mockStarters: Starter[] = [
     downloads: 723,
     author: 'dustinwloring1988',
     preview: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80',
-    createdAt: '2024-03-15',
+    createdAt: '2024-12-29',
     repoUrl: 'https://github.com/bolt-starter-templates/restaurant-starter-template'
   },
   {
@@ -88,7 +88,7 @@ export const mockStarters: Starter[] = [
     downloads: 945,
     author: 'dustinwloring1988',
     preview: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=80',
-    createdAt: '2024-03-15',
+    createdAt: '2024-12-29',
     repoUrl: 'https://github.com/bolt-starter-templates/starter-template'
   },
   {
@@ -118,7 +118,7 @@ export const mockStarters: Starter[] = [
     downloads: 634,
     author: 'dustinwloring1988',
     preview: 'https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?auto=format&fit=crop&w=800&q=80',
-    createdAt: '2024-03-15',
+    createdAt: '2024-12-29',
     repoUrl: 'https://github.com/bolt-starter-templates/chatty'
   },
   {
@@ -148,7 +148,7 @@ export const mockStarters: Starter[] = [
     downloads: 523,
     author: 'dustinwloring1988',
     preview: 'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&w=800&q=80',
-    createdAt: '2024-03-15',
+    createdAt: '2024-12-29',
     repoUrl: 'https://github.com/bolt-starter-templates/todo-template'
   },
   {
@@ -178,7 +178,7 @@ export const mockStarters: Starter[] = [
     downloads: 678,
     author: 'dustinwloring1988',
     preview: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80',
-    createdAt: '2024-03-15',
+    createdAt: '2024-12-29',
     repoUrl: 'https://github.com/bolt-starter-templates/social-starter'
   }
 ];
