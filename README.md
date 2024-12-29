@@ -4,6 +4,8 @@
 [![NPM Version](https://img.shields.io/npm/v/extension-library.svg)](https://www.npmjs.com/package/extension-library)
 [![GitHub Issues](https://img.shields.io/github/issues/dustinwloring1988/extension-library.svg)](https://github.com/dustinwloring1988/extension-library/issues)
 
+https://github.com/user-attachments/assets/bb9827a0-c5ad-46e6-823e-1004e8c63284
+
 A comprehensive collection of JavaScript/TypeScript utilities and extensions to enhance your development workflow.
 
 ## 🚀 Features
