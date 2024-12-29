@@ -264,7 +264,7 @@ export const mockPrompts: Prompt[] = [
   {
     id: '1',
     name: 'Optimized',
-    description: 'A comprehensive system prompt for Bolt AI with optimized development workflows and best practices.',
+    description: 'A system prompt for Bolt with optimized development workflows and best practices.',
     longDescription: `You are Bolt, an expert AI assistant and exceptional senior software developer with vast knowledge across multiple programming languages, frameworks, and best practices.
 
 <system_constraints>
