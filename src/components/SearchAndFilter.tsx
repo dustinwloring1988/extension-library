@@ -34,12 +34,19 @@ export function SearchAndFilter({
           { value: 'workflow', label: 'Workflow' },
           { value: 'best-practices', label: 'Best Practices' }
         ];
+      case 'providers':
+        return [
+          { value: 'all', label: 'All Providers' },
+          { value: 'openai', label: 'OpenAI Compatible' },
+          { value: 'anthropic', label: 'Anthropic Compatible' },
+          { value: 'custom', label: 'Custom Providers' }
+        ];
       default:
         return [{ value: 'all', label: 'All' }];
     }
   };
 
-  if (activeTab === 'providers' || activeTab === 'models') {
+  if (activeTab === 'models') {
     return null;
   }
 

@@ -68,6 +68,23 @@ export function TabContent({ activeTab }: TabContentProps) {
     });
   }, [searchQuery, selectedFilter]);
 
+  const filteredProviders = useMemo(() => {
+    return mockProviders.filter(provider => {
+      const matchesSearch = 
+        provider.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        provider.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        provider.baseModels.some(model => model.toLowerCase().includes(searchQuery.toLowerCase()));
+      
+      if (selectedFilter === 'all') return matchesSearch;
+      
+      return matchesSearch && (
+        (selectedFilter === 'openai' && provider.name.toLowerCase().includes('openai')) ||
+        (selectedFilter === 'anthropic' && provider.name.toLowerCase().includes('anthropic')) ||
+        (selectedFilter === 'custom' && !provider.name.toLowerCase().includes('openai') && !provider.name.toLowerCase().includes('anthropic'))
+      );
+    });
+  }, [searchQuery, selectedFilter]);
+
   return (
     <>
       <SearchAndFilter
@@ -96,7 +113,7 @@ export function TabContent({ activeTab }: TabContentProps) {
           />
         ))}
         
-        {activeTab === 'providers' && mockProviders.map((provider) => (
+        {activeTab === 'providers' && filteredProviders.map((provider) => (
           <ProviderCard
             key={provider.id}
             provider={provider}
