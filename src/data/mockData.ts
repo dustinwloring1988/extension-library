@@ -247,7 +247,7 @@ export const mockProviders: Provider[] = [
       • Cross-platform support
     `,
     website: 'https://ollama.ai',
-    baseModels: ['Llama 2', 'Mistral', 'CodeLlama', 'Gemma'],
+    baseModels: ['ANY'],
     downloads: 1234,
     configTemplate: {
       baseUrl: 'http://localhost:11434'
@@ -269,7 +269,7 @@ export const mockProviders: Provider[] = [
       • Secure local execution
     `,
     website: 'https://lmstudio.ai',
-    baseModels: ['Mixtral', 'Llama', 'Neural', 'Stable'],
+    baseModels: ['ANY'],
     downloads: 987,
     configTemplate: {
       baseUrl: 'http://localhost:1234'
@@ -281,21 +281,17 @@ export const mockProviders: Provider[] = [
     description: 'Access state-of-the-art language models through OpenAI\'s API.',
     longDescription: `
       Industry-leading AI models and capabilities:
-      • GPT-4 and GPT-3.5 Turbo
-      • Advanced reasoning
-      • Code generation
-      • Natural language processing
-      • Context-aware responses
-      • API integration
-      • Fine-tuning options
-      • Enterprise-grade reliability
+      • Wide model compatibility
+      • Performance optimization
+      • Model fine-tuning
+      • Easy deployment
     `,
-    website: 'https://openai.com',
-    baseModels: ['GPT-4', 'GPT-3.5 Turbo'],
+    website: 'https://openailike.com',
+    baseModels: ['ANY'],
     downloads: 2456,
     configTemplate: {
       apiKey: 'YOUR_API_KEY',
-      organization: 'YOUR_ORG_ID' // Optional
+      baseUrl: 'http://localhost:8000'
     }
   }
 ];
