@@ -54,6 +54,36 @@ export const mockStarters: Starter[] = [
   },
   {
     id: '3',
+    name: 'DEMO Web Game Collection',
+    description: 'DEMO A versatile template for creating multiple web-based games with shared components and state management.',
+    longDescription: `
+      Build a collection of web games with:
+      • Shared game engine components
+      • Common UI elements and controls
+      • State management system
+      • Score tracking and leaderboards
+      • Sound effects and music support
+      • Responsive design for all devices
+      • Game progress saving
+      • Multiple game modes
+      • Achievement system
+      • Performance optimization
+    `,
+    features: [
+      'Multiple game templates',
+      'Shared components',
+      'State management',
+      'Sound system'
+    ],
+    technologies: ['React', 'TypeScript', 'Canvas API', 'Web Audio'],
+    downloads: 0,
+    author: 'dustinwloring1988',
+    preview: 'https://images.unsplash.com/photo-1585504198199-20277593b94f?auto=format&fit=crop&w=800&q=80',
+    createdAt: '2024-12-29',
+    repoUrl: 'https://github.com/bolt-starter-templates/multigame-template'
+  },
+  {
+    id: '4',
     name: 'DEMO Web Blog Template',
     description: 'DEMO A modern, feature-rich blog template built with Next.js and Tailwind CSS',
     longDescription: `A professional blog template that includes:
@@ -82,161 +112,9 @@ export const mockStarters: Starter[] = [
     downloads: 0,
     author: 'dustinwloring1988',
     preview: 'https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=800&q=80',
-    createdAt: new Date().toISOString(),
+    createdAt: '2024-12-29',
     repoUrl: 'https://github.com/bolt-starter-templates/blog-template'
   }
-  /*
-  {
-    id: '2',
-    name: 'Restaurant Starter',
-    description: 'A complete restaurant website template with menu management, reservations, and online ordering.',
-    longDescription: `
-      Launch your restaurant website with features like:
-      • Digital menu management
-      • Table reservations
-      • Online ordering system
-      • Photo gallery
-      • Customer reviews
-      • Contact forms
-      • Mobile responsive design
-      • SEO optimization
-      • Social media integration
-      • Analytics dashboard
-    `,
-    features: [
-      'Menu management',
-      'Reservations',
-      'Online ordering',
-      'Mobile responsive'
-    ],
-    technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Prisma'],
-    downloads: 723,
-    author: 'dustinwloring1988',
-    preview: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80',
-    createdAt: '2024-12-29',
-    repoUrl: 'https://github.com/bolt-starter-templates/restaurant-starter-template'
-  },
-  {
-    id: '3',
-    name: 'Basic Starter',
-    description: 'A minimal, modern starter template with essential features and best practices.',
-    longDescription: `
-      Start your project with a solid foundation:
-      • Modern tech stack
-      • Authentication ready
-      • Database integration
-      • API routes setup
-      • Testing configuration
-      • CI/CD pipeline
-      • Documentation
-      • Code quality tools
-      • Performance optimized
-      • Security best practices
-    `,
-    features: [
-      'Modern stack',
-      'Authentication',
-      'API ready',
-      'Testing setup'
-    ],
-    technologies: ['React', 'TypeScript', 'Express', 'PostgreSQL'],
-    downloads: 945,
-    author: 'dustinwloring1988',
-    preview: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=80',
-    createdAt: '2024-12-29',
-    repoUrl: 'https://github.com/bolt-starter-templates/starter-template'
-  },
-  {
-    id: '4',
-    name: 'Chatty',
-    description: 'A real-time chat application template with modern features and scalable architecture.',
-    longDescription: `
-      Build a chat application with:
-      • Real-time messaging
-      • Group chats
-      • Direct messages
-      • File sharing
-      • User presence
-      • Message history
-      • Push notifications
-      • Emoji support
-      • Message search
-      • Mobile responsive
-    `,
-    features: [
-      'Real-time chat',
-      'Group messaging',
-      'File sharing',
-      'Push notifications'
-    ],
-    technologies: ['React', 'Socket.IO', 'Express', 'MongoDB'],
-    downloads: 634,
-    author: 'dustinwloring1988',
-    preview: 'https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?auto=format&fit=crop&w=800&q=80',
-    createdAt: '2024-12-29',
-    repoUrl: 'https://github.com/bolt-starter-templates/chatty'
-  },
-  {
-    id: '5',
-    name: 'Todo App',
-    description: 'A feature-rich todo application template with task management and organization features.',
-    longDescription: `
-      Create a powerful todo app with:
-      • Task categories
-      • Due dates
-      • Priority levels
-      • Subtasks
-      • Tags
-      • Search & filter
-      • Task sharing
-      • Progress tracking
-      • Reminders
-      • Data export
-    `,
-    features: [
-      'Task management',
-      'Categories',
-      'Due dates',
-      'Progress tracking'
-    ],
-    technologies: ['Vue.js', 'Vuex', 'Firebase', 'TailwindCSS'],
-    downloads: 523,
-    author: 'dustinwloring1988',
-    preview: 'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&w=800&q=80',
-    createdAt: '2024-12-29',
-    repoUrl: 'https://github.com/bolt-starter-templates/todo-template'
-  },
-  {
-    id: '6',
-    name: 'Social Starter',
-    description: 'A social network starter template with modern features and scalable architecture.',
-    longDescription: `
-      Launch your social platform with:
-      • User profiles
-      • News feed
-      • Friend connections
-      • Post sharing
-      • Comments & likes
-      • Direct messaging
-      • Notifications
-      • Media uploads
-      • Activity tracking
-      • Privacy controls
-    `,
-    features: [
-      'User profiles',
-      'News feed',
-      'Direct messaging',
-      'Media sharing'
-    ],
-    technologies: ['React', 'GraphQL', 'Node.js', 'PostgreSQL'],
-    downloads: 678,
-    author: 'dustinwloring1988',
-    preview: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80',
-    createdAt: '2024-12-29',
-    repoUrl: 'https://github.com/bolt-starter-templates/social-starter'
-  }
-  */
 ];
 
 export const mockPrompts: Prompt[] = [
