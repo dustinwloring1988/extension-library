@@ -10,6 +10,7 @@ import { ProviderConfigDialog } from './ProviderConfigDialog';
 import { SearchAndFilter } from './SearchAndFilter';
 import { mockPrompts, mockProviders, mockModels, mockStarters, mockFeatures } from '../data/mockData';
 import type { TabType, Prompt, Provider, Model, Starter, Feature } from '../types';
+import { CustomFeatureDialog } from './CustomFeatureDialog';
 
 interface TabContentProps {
   activeTab: TabType;
@@ -21,6 +22,8 @@ export function TabContent({ activeTab }: TabContentProps) {
   const [selectedFilter, setSelectedFilter] = useState('all');
   const [showCustomDialog, setShowCustomDialog] = useState(false);
   const [showProviderConfigDialog, setShowProviderConfigDialog] = useState(false);
+  const [showFeatureDialog, setShowFeatureDialog] = useState(false);
+  const [selectedFeature, setSelectedFeature] = useState('');
 
   const handleDownload = async (item: Prompt | Provider | Model | Starter | Feature) => {
     if ('repoUrl' in item) {
@@ -39,6 +42,11 @@ export function TabContent({ activeTab }: TabContentProps) {
 
   const handleItemClick = (item: Prompt | Provider | Model | Starter | Feature) => {
     setSelectedItem(item);
+  };
+
+  const handleFeatureClick = (feature: Feature) => {
+    setSelectedFeature(feature.name);
+    setShowFeatureDialog(true);
   };
 
   const filteredStarters = useMemo(() => {
@@ -137,14 +145,24 @@ export function TabContent({ activeTab }: TabContentProps) {
           />
         ))}
 
-        {activeTab === 'features' && filteredFeatures.map((feature) => (
-          <FeatureCard
-            key={feature.id}
-            feature={feature}
-            onClick={() => handleItemClick(feature)}
-            onDownload={() => handleDownload(feature)}
-          />
-        ))}
+        {activeTab === 'features' && (
+          <>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {filteredFeatures.map((feature) => (
+                <FeatureCard
+                  key={feature.id}
+                  feature={feature}
+                  onDownload={() => handleFeatureClick(feature)}
+                />
+              ))}
+            </div>
+            <CustomFeatureDialog
+              isOpen={showFeatureDialog}
+              onClose={() => setShowFeatureDialog(false)}
+              featureName={selectedFeature}
+            />
+          </>
+        )}
       </div>
 
       <Modal
