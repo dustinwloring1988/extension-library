@@ -3,7 +3,7 @@ import type { Prompt, Provider, Model, Starter } from '../types';
 export const mockStarters: Starter[] = [
   {
     id: '1',
-    name: 'Twitter Clone',
+    name: 'DEMO Twitter Clone',
     description: 'DEMO A modern Twitter clone with real-time updates, user authentication, and social features.',
     longDescription: `
       Build a full-featured Twitter clone with:
@@ -33,7 +33,7 @@ export const mockStarters: Starter[] = [
   {
     id: '2',
     name: 'DEMO Basic template',
-    description: 'A basic template for getting started.',
+    description: 'DEMO A basic template for getting started.',
     longDescription: `
       Build powerful browser extensions with:
       • Modern extension architecture
