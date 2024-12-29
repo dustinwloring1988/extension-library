@@ -45,7 +45,7 @@ export const mockStarters: Starter[] = [
       'Extension APIs',
       'Security features'
     ],
-    technologies: ['TypeScript', 'React', 'Browser APIs', 'Modern Web Stack'],
+    technologies: ['TypeScript', 'React', 'Browser APIs'],
     downloads: 0,
     author: 'dustinwloring1988',
     preview: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80',
