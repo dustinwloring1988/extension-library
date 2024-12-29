@@ -36,7 +36,7 @@ export function SettingsModal({ isOpen, onClose, baseUrl, onSave }: SettingsModa
           <div className="space-y-4">
             <div>
               <label htmlFor="baseUrl" className="block text-sm font-medium text-gray-300 mb-2">
-                Base URL for Starter Templates
+                Base URL for your bolt.diy instance
               </label>
               <input
                 id="baseUrl"
