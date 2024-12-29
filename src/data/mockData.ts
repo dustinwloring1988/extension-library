@@ -50,7 +50,7 @@ export const mockStarters: Starter[] = [
     author: 'dustinwloring1988',
     preview: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80',
     createdAt: '2024-12-29',
-    repoUrl: 'https://github.com/dustinwloring1988/extension-library'
+    repoUrl: 'https://github.com/bolt-starter-templates/basic-template'
   },
   {
     id: '3',
@@ -81,39 +81,6 @@ export const mockStarters: Starter[] = [
     preview: 'https://images.unsplash.com/photo-1585504198199-20277593b94f?auto=format&fit=crop&w=800&q=80',
     createdAt: '2024-12-29',
     repoUrl: 'https://github.com/bolt-starter-templates/multigame-template'
-  },
-  {
-    id: '4',
-    name: 'DEMO Web Blog Template',
-    description: 'DEMO A modern, feature-rich blog template built with Next.js and Tailwind CSS',
-    longDescription: `A professional blog template that includes:
-    • SEO optimization with meta tags and schema markup
-    • Responsive design for all devices
-    • Search functionality
-    • Table of contents for blog posts
-    • Author profiles
-    • Rich media support
-    • Syntax highlighting for code snippets
-    • Comment system integration
-    • Dark/light mode support
-    • Performance optimized`,
-    features: [
-      'SEO optimized with meta tags and schema markup',
-      'Search functionality and table of contents',
-      'Author profiles and commenting system',
-      'Dark/light mode and syntax highlighting'
-    ],
-    technologies: [
-      'Next.js',
-      'React',
-      'Tailwind CSS',
-      'TypeScript'
-    ],
-    downloads: 0,
-    author: 'dustinwloring1988',
-    preview: 'https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=800&q=80',
-    createdAt: '2024-12-29',
-    repoUrl: 'https://github.com/bolt-starter-templates/blog-template'
   }
 ];
 
