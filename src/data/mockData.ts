@@ -536,46 +536,38 @@ export const mockProviders: Provider[] = [
 export const mockFeatures: Feature[] = [
   {
     id: '1',
-    name: 'Debug Menu',
-    description: 'Enable the debug menu for advanced development options and testing tools.',
+    name: 'Debug Features',
+    description: 'Enable advanced debugging tools and logging system for development and troubleshooting.',
     longDescription: `
-      The Debug Menu provides advanced development tools:
-      • Inspect runtime states
-      • Test edge cases
-      • Monitor performance
-      • View system logs
-      • Debug configurations
+      Comprehensive debugging and logging toolkit:
+      • Debug Menu Features:
+        - Inspect runtime states
+        - Test edge cases
+        - Monitor performance
+        - View system logs
+        - Debug configurations
+      
+      • Logging System Features:
+        - Detailed event tracking
+        - Error monitoring
+        - Performance metrics
+        - System diagnostics
+        - Debug information
+      
+      When enabled, this feature adds two new tabs to Settings:
+      • Debug Tab: For runtime inspection and testing tools
+      • Log Tab: For comprehensive logging and monitoring
       
       To enable this feature:
       1. Open Settings
       2. Navigate to Features section
-      3. Toggle "Debug Menu" option
+      3. Toggle "Debug Features" option
     `,
     type: 'debug',
-    downloads: 245
+    downloads: 434
   },
   {
     id: '2',
-    name: 'Log System',
-    description: 'Enable detailed logging system for tracking application behavior and debugging.',
-    longDescription: `
-      The Log System provides comprehensive logging capabilities:
-      • Detailed event tracking
-      • Error monitoring
-      • Performance metrics
-      • System diagnostics
-      • Debug information
-      
-      To enable this feature:
-      1. Open Settings
-      2. Navigate to Features section
-      3. Toggle "Log System" option
-    `,
-    type: 'log',
-    downloads: 189
-  },
-  {
-    id: '3',
     name: 'Auto Select Code Template',
     description: 'Let Bolt select the best starter template for your project.',
     longDescription: `
@@ -596,7 +588,7 @@ export const mockFeatures: Feature[] = [
     downloads: 324
   },
   {
-    id: '4',
+    id: '3',
     name: 'Use Context Optimization',
     description: 'Redact file contents from chat and puts the latest file contents on the system prompt.',
     longDescription: `
