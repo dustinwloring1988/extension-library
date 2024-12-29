@@ -11,7 +11,6 @@ A comprehensive collection of JavaScript/TypeScript utilities and extensions to 
 ## 🚀 Features
 
 - 📦 Modern JavaScript/TypeScript support
-- 🔧 Fully typed API
 - 📚 Extensive documentation
 - ⚡ Lightweight and performant
 - 🧪 Thoroughly tested
