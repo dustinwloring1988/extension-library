@@ -307,7 +307,9 @@ export const mockProviders: Provider[] = [
     downloads: 1234,
     configTemplate: {
       baseUrl: 'http://localhost:11434'
-    }
+    },
+    author: 'bolt.diy',
+    createdAt: '2024-12-28'
   },
   {
     id: '2',
@@ -329,7 +331,9 @@ export const mockProviders: Provider[] = [
     downloads: 987,
     configTemplate: {
       baseUrl: 'http://localhost:1234'
-    }
+    },
+    author: 'bolt.diy',
+    createdAt: '2024-12-28'
   },
   {
     id: '3',
@@ -348,7 +352,9 @@ export const mockProviders: Provider[] = [
     configTemplate: {
       apiKey: 'YOUR_API_KEY',
       baseUrl: 'http://localhost:8000'
-    }
+    },
+    author: 'bolt.diy',
+    createdAt: '2024-12-28'
   }
 ];
 

@@ -32,6 +32,8 @@ export interface Provider {
   baseModels: string[];
   downloads: number;
   configTemplate: Record<string, any>;
+  author: string;
+  createdAt: string;
 }
 
 export interface Starter {
