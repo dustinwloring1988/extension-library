@@ -19,7 +19,7 @@ export function CustomDialog({ isOpen, onClose }: CustomDialogProps) {
           <X className="w-5 h-5" />
         </button>
         <div className="p-6">
-          <h2 className="text-xl font-bold text-white mb-4">How to Enable Optimized Mode</h2>
+          <h2 className="text-xl font-bold text-white mb-4">How to Change System Prompt</h2>
           <div className="space-y-4 text-gray-300">
             <div className="flex items-start space-x-3">
               <div className="mt-1">
@@ -47,7 +47,7 @@ export function CustomDialog({ isOpen, onClose }: CustomDialogProps) {
               </div>
               <div>
                 <p className="font-medium">3. Change System Prompt</p>
-                <p className="text-sm text-gray-400">Locate the "System Prompt" dropdown at the bottom and change it from "Default" to "Optimized"</p>
+                <p className="text-sm text-gray-400">Locate the "System Prompt" dropdown at the bottom and select your desired prompt</p>
               </div>
             </div>
           </div>

@@ -22,7 +22,7 @@ export function TabContent({ activeTab }: TabContentProps) {
   const handleDownload = async (item: Prompt | Provider | Model | Starter) => {
     if ('repoUrl' in item) {
       window.location.href = `http://localhost:5173/git?url=${encodeURIComponent(item.repoUrl)}`;
-    } else if ('systemPrompt' in item && item.name === 'Optimized') {
+    } else if ('systemPrompt' in item && (item.name === 'Optimized' || item.name === 'Default')) {
       setShowCustomDialog(true);
     } else {
       console.log('Downloading:', item);
