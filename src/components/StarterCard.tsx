@@ -11,7 +11,7 @@ interface StarterCardProps {
 export function StarterCard({ starter, onDownload, onClick }: StarterCardProps) {
   return (
     <div 
-      className="bg-[#1A1A1B] rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow cursor-pointer"
+      className="bg-[#1A1A1B] rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow cursor-pointer h-full flex flex-col"
       onClick={onClick}
     >
       <img 
@@ -19,10 +19,10 @@ export function StarterCard({ starter, onDownload, onClick }: StarterCardProps) 
         alt={`${starter.name} preview`}
         className="w-full h-48 object-cover"
       />
-      <div className="p-6">
+      <div className="p-6 flex flex-col flex-1">
         <div className="flex justify-between items-start">
-          <h3 className="text-lg font-semibold text-white">{starter.name}</h3>
-          <div className="flex items-center space-x-3">
+          <h3 className="text-lg font-semibold text-white line-clamp-1">{starter.name}</h3>
+          <div className="flex items-center space-x-3 shrink-0">
             <a
               href={starter.repoUrl}
               target="_blank"
@@ -40,19 +40,19 @@ export function StarterCard({ starter, onDownload, onClick }: StarterCardProps) 
               className="flex items-center space-x-1 text-purple-400 hover:text-purple-300"
             >
               <Download className="w-4 h-4" />
-              <span>{starter.downloads}</span>
+              <span>Import</span>
             </button>
           </div>
         </div>
-        <p className="mt-2 text-gray-400">{starter.description}</p>
+        <p className="mt-2 text-gray-400 line-clamp-2">{starter.description}</p>
         
         <div className="mt-4">
           <h4 className="text-sm font-medium text-gray-300 mb-2">Key Features:</h4>
           <ul className="space-y-1">
             {starter.features.slice(0, 3).map((feature) => (
               <li key={feature} className="flex items-center text-sm text-gray-400">
-                <CheckCircle2 className="w-4 h-4 mr-2 text-purple-500" />
-                {feature}
+                <CheckCircle2 className="w-4 h-4 mr-2 text-purple-500 shrink-0" />
+                <span className="line-clamp-1">{feature}</span>
               </li>
             ))}
           </ul>
@@ -72,7 +72,7 @@ export function StarterCard({ starter, onDownload, onClick }: StarterCardProps) 
         <div className="mt-4 flex items-center space-x-4 text-sm text-gray-400">
           <div className="flex items-center">
             <User className="w-4 h-4 mr-1" />
-            <span>{starter.author}</span>
+            <span className="line-clamp-1">{starter.author}</span>
           </div>
           <div className="flex items-center">
             <Calendar className="w-4 h-4 mr-1" />

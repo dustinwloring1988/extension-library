@@ -56,7 +56,7 @@ export const mockStarters: Starter[] = [
     ],
     technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Prisma'],
     downloads: 723,
-    author: 'bolt-team',
+    author: 'dustinwloring1988',
     preview: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80',
     createdAt: '2024-03-15',
     repoUrl: 'https://github.com/bolt-starter-templates/restaurant-starter-template'
@@ -86,7 +86,7 @@ export const mockStarters: Starter[] = [
     ],
     technologies: ['React', 'TypeScript', 'Express', 'PostgreSQL'],
     downloads: 945,
-    author: 'bolt-team',
+    author: 'dustinwloring1988',
     preview: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=80',
     createdAt: '2024-03-15',
     repoUrl: 'https://github.com/bolt-starter-templates/starter-template'
@@ -116,7 +116,7 @@ export const mockStarters: Starter[] = [
     ],
     technologies: ['React', 'Socket.IO', 'Express', 'MongoDB'],
     downloads: 634,
-    author: 'bolt-team',
+    author: 'dustinwloring1988',
     preview: 'https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?auto=format&fit=crop&w=800&q=80',
     createdAt: '2024-03-15',
     repoUrl: 'https://github.com/bolt-starter-templates/chatty'
@@ -146,7 +146,7 @@ export const mockStarters: Starter[] = [
     ],
     technologies: ['Vue.js', 'Vuex', 'Firebase', 'TailwindCSS'],
     downloads: 523,
-    author: 'bolt-team',
+    author: 'dustinwloring1988',
     preview: 'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&w=800&q=80',
     createdAt: '2024-03-15',
     repoUrl: 'https://github.com/bolt-starter-templates/todo-template'
@@ -176,7 +176,7 @@ export const mockStarters: Starter[] = [
     ],
     technologies: ['React', 'GraphQL', 'Node.js', 'PostgreSQL'],
     downloads: 678,
-    author: 'bolt-team',
+    author: 'dustinwloring1988',
     preview: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80',
     createdAt: '2024-03-15',
     repoUrl: 'https://github.com/bolt-starter-templates/social-starter'
@@ -184,6 +184,27 @@ export const mockStarters: Starter[] = [
 ];
 
 export const mockPrompts: Prompt[] = [
+  {
+    id: '2',
+    name: 'Default',
+    description: 'A standard system prompt for general development tasks and coding assistance.',
+    longDescription: `A versatile system prompt designed for general software development tasks:
+      • Code generation and modification
+      • Bug fixing and debugging
+      • Best practices implementation
+      • Code review and optimization
+      • Documentation writing
+      • Testing strategies
+      • Performance optimization
+      • Security considerations
+      • Architecture design
+      • Development workflows`,
+    systemPrompt: 'default_prompt',
+    tags: ['development', 'general', 'best-practices'],
+    downloads: 856,
+    author: 'bolt.diy',
+    createdAt: '2024-12-29'
+  },
   {
     id: '1',
     name: 'Optimized',
