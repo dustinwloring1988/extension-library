@@ -4,7 +4,7 @@ export const mockStarters: Starter[] = [
   {
     id: '1',
     name: 'Twitter Clone',
-    description: 'A modern Twitter clone with real-time updates, user authentication, and social features.',
+    description: 'DEMO - NO DATABASE - A modern Twitter clone with real-time updates, user authentication, and social features.',
     longDescription: `
       Build a full-featured Twitter clone with:
       • Real-time tweet updates
@@ -19,8 +19,7 @@ export const mockStarters: Starter[] = [
       • Notifications system
     `,
     features: [
-      'Real-time updates',
-      'User authentication',
+      'Demo User authentication',
       'Social features',
       'Media support'
     ],
@@ -30,7 +29,30 @@ export const mockStarters: Starter[] = [
     preview: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=800&q=80',
     createdAt: '2024-12-29',
     repoUrl: 'https://github.com/dustinwloring1988/twitter-clone'
-  }/*,
+  },
+  {
+    id: '2',
+    name: 'DEMO - NO DATABASE - Basic template',
+    description: 'A basic template for getting started.',
+    longDescription: `
+      Build powerful browser extensions with:
+      • Modern extension architecture
+      • Cross-browser compatibility
+    `,
+    features: [
+      'Cross-browser support',
+      'Modern architecture',
+      'Extension APIs',
+      'Security features'
+    ],
+    technologies: ['TypeScript', 'React', 'Browser APIs', 'Modern Web Stack'],
+    downloads: 0,
+    author: 'dustinwloring1988',
+    preview: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80',
+    createdAt: '2024-12-29',
+    repoUrl: 'https://github.com/dustinwloring1988/extension-library'
+  }  
+  /*
   {
     id: '2',
     name: 'Restaurant Starter',
