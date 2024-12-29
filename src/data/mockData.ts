@@ -80,7 +80,7 @@ export const mockStarters: Starter[] = [
       'TypeScript'
     ],
     downloads: 0,
-    author: 'Bolt Community',
+    author: 'dustinwloring1988',
     preview: 'https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=800&q=80',
     createdAt: new Date().toISOString(),
     repoUrl: 'https://github.com/bolt-starter-templates/blog-template'
