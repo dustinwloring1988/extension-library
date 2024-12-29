@@ -3,19 +3,20 @@ import { PromptCard } from './PromptCard';
 import { ProviderCard } from './ProviderCard';
 import { ModelCard } from './ModelCard';
 import { StarterCard } from './StarterCard';
+import { FeatureCard } from './FeatureCard';
 import { Modal } from './Modal';
 import { CustomDialog } from './CustomDialog';
 import { ProviderConfigDialog } from './ProviderConfigDialog';
 import { SearchAndFilter } from './SearchAndFilter';
-import { mockPrompts, mockProviders, mockModels, mockStarters } from '../data/mockData';
-import type { TabType, Prompt, Provider, Model, Starter } from '../types';
+import { mockPrompts, mockProviders, mockModels, mockStarters, mockFeatures } from '../data/mockData';
+import type { TabType, Prompt, Provider, Model, Starter, Feature } from '../types';
 
 interface TabContentProps {
   activeTab: TabType;
 }
 
 export function TabContent({ activeTab }: TabContentProps) {
-  const [selectedItem, setSelectedItem] = useState<Prompt | Provider | Model | Starter | null>(null);
+  const [selectedItem, setSelectedItem] = useState<Prompt | Provider | Model | Starter | Feature | null>(null);
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedFilter, setSelectedFilter] = useState('all');
   const [showCustomDialog, setShowCustomDialog] = useState(false);
@@ -86,6 +87,18 @@ export function TabContent({ activeTab }: TabContentProps) {
     });
   }, [searchQuery, selectedFilter]);
 
+  const filteredFeatures = useMemo(() => {
+    return mockFeatures.filter(feature => {
+      const matchesSearch = 
+        feature.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        feature.description.toLowerCase().includes(searchQuery.toLowerCase());
+      
+      if (selectedFilter === 'all') return matchesSearch;
+      
+      return matchesSearch && feature.type === selectedFilter;
+    });
+  }, [searchQuery, selectedFilter]);
+
   return (
     <>
       <SearchAndFilter
@@ -121,6 +134,14 @@ export function TabContent({ activeTab }: TabContentProps) {
             onDownload={handleDownload}
           />
         ))}
+
+        {activeTab === 'features' && filteredFeatures.map((feature) => (
+          <FeatureCard
+            key={feature.id}
+            feature={feature}
+            onClick={() => handleItemClick(feature)}
+          />
+        ))}
       </div>
 
       <Modal
@@ -133,16 +154,6 @@ export function TabContent({ activeTab }: TabContentProps) {
             <div className="prose prose-invert max-w-none">
               <p className="whitespace-pre-line">{selectedItem.longDescription}</p>
             </div>
-            {!('repoUrl' in selectedItem) && (
-              <div className="mt-6 flex justify-end">
-                <button
-                  onClick={() => handleDownload(selectedItem)}
-                  className="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg transition-colors"
-                >
-                  Download
-                </button>
-              </div>
-            )}
           </div>
         )}
       </Modal>

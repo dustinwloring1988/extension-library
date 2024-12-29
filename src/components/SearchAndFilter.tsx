@@ -41,6 +41,12 @@ export function SearchAndFilter({
           { value: 'anthropic', label: 'Anthropic Compatible' },
           { value: 'custom', label: 'Custom Providers' }
         ];
+      case 'features':
+        return [
+          { value: 'all', label: 'All Features' },
+          { value: 'debug', label: 'Debug Tools' },
+          { value: 'log', label: 'Logging Tools' }
+        ];
       default:
         return [{ value: 'all', label: 'All' }];
     }

@@ -48,4 +48,13 @@ export interface Starter {
   repoUrl: string;
 }
 
-export type TabType = 'starters' | 'prompts' | 'providers';
+export interface Feature {
+  id: string;
+  name: string;
+  description: string;
+  longDescription: string;
+  type: 'debug' | 'log';
+  downloads: number;
+}
+
+export type TabType = 'starters' | 'prompts' | 'providers' | 'features';

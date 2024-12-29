@@ -1,4 +1,4 @@
-import type { Prompt, Provider, Model, Starter } from '../types';
+import type { Prompt, Provider, Model, Starter, Feature } from '../types';
 
 export const mockStarters: Starter[] = [
   {
@@ -349,5 +349,48 @@ export const mockProviders: Provider[] = [
       apiKey: 'YOUR_API_KEY',
       baseUrl: 'http://localhost:8000'
     }
+  }
+];
+
+export const mockFeatures: Feature[] = [
+  {
+    id: '1',
+    name: 'Debug Menu',
+    description: 'Enable the debug menu for advanced development options and testing tools.',
+    longDescription: `
+      The Debug Menu provides advanced development tools:
+      • Inspect runtime states
+      • Test edge cases
+      • Monitor performance
+      • View system logs
+      • Debug configurations
+      
+      To enable this feature:
+      1. Open Settings
+      2. Navigate to Features section
+      3. Toggle "Debug Menu" option
+    `,
+    type: 'debug',
+    downloads: 245
+  },
+  {
+    id: '2',
+    name: 'Log System',
+    description: 'Enable detailed logging system for tracking application behavior and debugging.',
+    longDescription: `
+      The Log System provides comprehensive logging capabilities:
+      • Detailed event tracking
+      • Error monitoring
+      • Performance metrics
+      • System diagnostics
+      • Debug information
+      
+      To enable this feature:
+      1. Open Settings
+      2. Navigate to Features section
+      3. Toggle "Log System" option
+    `,
+    type: 'log',
+    downloads: 189
   }
 ];
