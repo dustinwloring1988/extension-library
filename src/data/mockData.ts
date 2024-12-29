@@ -31,6 +31,7 @@ export const mockStarters: Starter[] = [
     createdAt: '2024-12-29',
     repoUrl: 'https://github.com/dustinwloring1988/twitter-clone'
   },
+  /*
   {
     id: '2',
     name: 'Restaurant Starter',
@@ -121,6 +122,7 @@ export const mockStarters: Starter[] = [
     createdAt: '2024-12-29',
     repoUrl: 'https://github.com/bolt-starter-templates/chatty'
   },
+  */
   {
     id: '5',
     name: 'Todo App',
