@@ -55,7 +55,7 @@ export interface Feature {
   name: string;
   description: string;
   longDescription: string;
-  type: 'debug' | 'log';
+  type: 'debug' | 'log' | 'template' | 'context';
   downloads: number;
 }
 

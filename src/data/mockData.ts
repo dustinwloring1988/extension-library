@@ -573,5 +573,47 @@ export const mockFeatures: Feature[] = [
     `,
     type: 'log',
     downloads: 189
+  },
+  {
+    id: '3',
+    name: 'Auto Select Code Template',
+    description: 'Let Bolt select the best starter template for your project.',
+    longDescription: `
+      Smart template selection system:
+      • Project requirement analysis
+      • Best-fit template matching
+      • Technology stack optimization
+      • Feature set evaluation
+      • Customization suggestions
+      • Framework compatibility check
+      
+      To enable this feature:
+      1. Open Settings
+      2. Navigate to Features section
+      3. Toggle "Auto Select Code Template" option
+    `,
+    type: 'template',
+    downloads: 324
+  },
+  {
+    id: '4',
+    name: 'Use Context Optimization',
+    description: 'Redact file contents from chat and puts the latest file contents on the system prompt.',
+    longDescription: `
+      Context optimization features:
+      • Automatic file content redaction
+      • System prompt updates
+      • Context management
+      • Memory optimization
+      • Real-time sync
+      • Privacy protection
+      
+      To enable this feature:
+      1. Open Settings
+      2. Navigate to Features section
+      3. Toggle "Use Context Optimization" option
+    `,
+    type: 'context',
+    downloads: 412
   }
 ];
