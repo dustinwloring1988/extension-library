@@ -147,12 +147,13 @@ export function TabContent({ activeTab }: TabContentProps) {
 
         {activeTab === 'features' && (
           <>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {filteredFeatures.map((feature) => (
                 <FeatureCard
                   key={feature.id}
                   feature={feature}
                   onDownload={() => handleFeatureClick(feature)}
+                  onClick={() => handleFeatureClick(feature)}
                 />
               ))}
             </div>
