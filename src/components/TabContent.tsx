@@ -23,7 +23,8 @@ export function TabContent({ activeTab }: TabContentProps) {
 
   const handleDownload = async (item: Prompt | Provider | Model | Starter) => {
     if ('repoUrl' in item) {
-      window.location.href = `http://localhost:5173/git?url=${encodeURIComponent(item.repoUrl)}`;
+      const baseUrl = localStorage.getItem('starter_base_url') || 'http://localhost:5173';
+      window.location.href = `${baseUrl}/git?url=${encodeURIComponent(item.repoUrl)}`;
     } else if ('systemPrompt' in item && (item.name === 'Optimized' || item.name === 'Default')) {
       setShowCustomDialog(true);
     } else if ('baseModels' in item) {
@@ -132,14 +133,16 @@ export function TabContent({ activeTab }: TabContentProps) {
             <div className="prose prose-invert max-w-none">
               <p className="whitespace-pre-line">{selectedItem.longDescription}</p>
             </div>
-            <div className="mt-6 flex justify-end">
-              <button
-                onClick={() => handleDownload(selectedItem)}
-                className="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg transition-colors"
-              >
-                Download
-              </button>
-            </div>
+            {!('repoUrl' in selectedItem) && (
+              <div className="mt-6 flex justify-end">
+                <button
+                  onClick={() => handleDownload(selectedItem)}
+                  className="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg transition-colors"
+                >
+                  Download
+                </button>
+              </div>
+            )}
           </div>
         )}
       </Modal>
