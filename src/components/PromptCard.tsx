@@ -1,5 +1,5 @@
 import React from 'react';
-import { Download, Tag } from 'lucide-react';
+import { Download, Tag, User, Calendar } from 'lucide-react';
 import type { Prompt } from '../types';
 
 interface PromptCardProps {
@@ -31,6 +31,16 @@ export function PromptCard({ prompt, onDownload }: PromptCardProps) {
             {tag}
           </span>
         ))}
+      </div>
+      <div className="mt-4 flex items-center space-x-4 text-sm text-gray-400">
+        <div className="flex items-center">
+          <User className="w-4 h-4 mr-1" />
+          <span>{prompt.author}</span>
+        </div>
+        <div className="flex items-center">
+          <Calendar className="w-4 h-4 mr-1" />
+          <span>{new Date(prompt.createdAt).toLocaleDateString()}</span>
+        </div>
       </div>
     </div>
   );

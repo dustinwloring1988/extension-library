@@ -1,5 +1,5 @@
 import React from 'react';
-import { Download, CheckCircle2, Github } from 'lucide-react';
+import { Download, CheckCircle2, Github, User, Calendar } from 'lucide-react';
 import type { Starter } from '../types';
 
 interface StarterCardProps {
@@ -67,6 +67,17 @@ export function StarterCard({ starter, onDownload, onClick }: StarterCardProps) 
               {tech}
             </span>
           ))}
+        </div>
+
+        <div className="mt-4 flex items-center space-x-4 text-sm text-gray-400">
+          <div className="flex items-center">
+            <User className="w-4 h-4 mr-1" />
+            <span>{starter.author}</span>
+          </div>
+          <div className="flex items-center">
+            <Calendar className="w-4 h-4 mr-1" />
+            <span>{new Date(starter.createdAt).toLocaleDateString()}</span>
+          </div>
         </div>
       </div>
     </div>
