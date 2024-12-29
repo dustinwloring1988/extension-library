@@ -21,10 +21,6 @@ A comprehensive collection of JavaScript/TypeScript utilities and extensions to 
 - Node.js 14.x or higher
 - npm 6.x or higher
 
-## 📖 Documentation
-
-For detailed documentation, please visit our [documentation](../../docs) section.
-
 ## 🤝 Contributing
 
 We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
