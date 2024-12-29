@@ -33,7 +33,7 @@ export const mockStarters: Starter[] = [
   {
     id: '2',
     name: 'DEMO Basic template',
-    description: 'DEMO A basic template for getting started.',
+    description: 'DEMO A basic template for getting started. Made with React, ShadCN and lucide icons.',
     longDescription: `
       Build powerful browser extensions with:
       • Modern extension architecture
