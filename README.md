@@ -6,7 +6,7 @@
 
 https://github.com/user-attachments/assets/bb9827a0-c5ad-46e6-823e-1004e8c63284
 
-A comprehensive collection of JavaScript/TypeScript utilities and extensions to enhance your development workflow.
+A extension library for bolt.diy that is powered anad used by the community.
 
 ## 🚀 Features
 
