@@ -277,7 +277,7 @@ export const mockProviders: Provider[] = [
   },
   {
     id: '3',
-    name: 'OpenAI',
+    name: 'OpenAI Like',
     description: 'Access state-of-the-art language models through OpenAI\'s API.',
     longDescription: `
       Industry-leading AI models and capabilities:

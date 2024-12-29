@@ -17,7 +17,7 @@ export function ProviderCard({ provider, onDownload }: ProviderCardProps) {
           className="flex items-center space-x-1 text-purple-400 hover:text-purple-300"
         >
           <Download className="w-4 h-4" />
-          <span>{provider.downloads}</span>
+          <span>Use</span>
         </button>
       </div>
       <p className="mt-2 text-gray-400">{provider.description}</p>
