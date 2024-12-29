@@ -9,14 +9,6 @@ export function Header() {
           <Puzzle className="w-8 h-8" />
           <h1 className="text-2xl font-bold">Extension Library</h1>
         </div>
-        <nav>
-          <ul className="flex space-x-6">
-            <li><a href="#starters" className="hover:text-purple-200">Starters</a></li>
-            <li><a href="#prompts" className="hover:text-purple-200">Prompts</a></li>
-            <li><a href="#providers" className="hover:text-purple-200">Providers</a></li>
-            <li><a href="#models" className="hover:text-purple-200">Models</a></li>
-          </ul>
-        </nav>
       </div>
     </header>
   );
