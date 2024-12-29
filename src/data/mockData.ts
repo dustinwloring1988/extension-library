@@ -4,7 +4,7 @@ export const mockStarters: Starter[] = [
   {
     id: '1',
     name: 'Twitter Clone',
-    description: 'DEMO - NO DATABASE - A modern Twitter clone with real-time updates, user authentication, and social features.',
+    description: 'DEMO A modern Twitter clone with real-time updates, user authentication, and social features.',
     longDescription: `
       Build a full-featured Twitter clone with:
       • Real-time tweet updates
@@ -32,7 +32,7 @@ export const mockStarters: Starter[] = [
   },
   {
     id: '2',
-    name: 'DEMO - NO DATABASE - Basic template',
+    name: 'DEMO Basic template',
     description: 'A basic template for getting started.',
     longDescription: `
       Build powerful browser extensions with:
