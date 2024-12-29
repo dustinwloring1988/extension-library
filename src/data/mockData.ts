@@ -355,6 +355,181 @@ export const mockProviders: Provider[] = [
     },
     author: 'bolt.diy',
     createdAt: '2024-12-28'
+  },
+  {
+    id: '4',
+    name: 'OpenRouter',
+    description: 'Access multiple AI models through a unified API gateway.',
+    longDescription: `
+      Unified access to multiple AI providers:
+      • Single API for multiple models
+      • Cost optimization
+      • Load balancing
+      • Usage analytics
+      • Flexible deployment
+      • Enterprise support
+    `,
+    website: 'https://openrouter.ai',
+    baseModels: ['ANY'],
+    downloads: 876,
+    configTemplate: {
+      apiKey: 'YOUR_API_KEY'
+    },
+    author: 'bolt.diy',
+    createdAt: '2024-12-28'
+  },
+  {
+    id: '5',
+    name: 'Deepseek',
+    description: 'Advanced language models specialized in technical and scientific tasks.',
+    longDescription: `
+      High-performance AI models for specialized tasks:
+      • Technical documentation
+      • Scientific research
+      • Code generation
+      • Data analysis
+      • Technical writing
+      • Research assistance
+    `,
+    website: 'https://deepseek.ai',
+    baseModels: ['ANY'],
+    downloads: 654,
+    configTemplate: {
+      apiKey: 'YOUR_API_KEY'
+    },
+    author: 'bolt.diy',
+    createdAt: '2024-12-28'
+  },
+  {
+    id: '6',
+    name: 'Cohere',
+    description: 'Enterprise-ready language models with customization capabilities.',
+    longDescription: `
+      Enterprise AI solutions:
+      • Custom model training
+      • Multilingual support
+      • Enterprise security
+      • API integration
+      • Analytics dashboard
+      • Team collaboration
+    `,
+    website: 'https://cohere.ai',
+    baseModels: ['ANY'],
+    downloads: 789,
+    configTemplate: {
+      apiKey: 'YOUR_API_KEY'
+    },
+    author: 'bolt.diy',
+    createdAt: '2024-12-28'
+  },
+  {
+    id: '7',
+    name: 'xAI',
+    description: 'Next-generation AI models with advanced reasoning capabilities.',
+    longDescription: `
+      Cutting-edge AI technology:
+      • Advanced reasoning
+      • Complex problem solving
+      • Natural conversation
+      • Context understanding
+      • Knowledge integration
+    `,
+    website: 'https://x.ai',
+    baseModels: ['ANY'],
+    downloads: 543,
+    configTemplate: {
+      apiKey: 'YOUR_API_KEY'
+    },
+    author: 'bolt.diy',
+    createdAt: '2024-12-28'
+  },
+  {
+    id: '8',
+    name: 'Together',
+    description: 'Collaborative AI platform with shared resources and model hosting.',
+    longDescription: `
+      Community-driven AI platform:
+      • Model sharing
+      • Collaborative training
+      • Resource pooling
+      • Community support
+      • Easy deployment
+      • Cost sharing
+    `,
+    website: 'https://together.ai',
+    baseModels: ['ANY'],
+    downloads: 678,
+    configTemplate: {
+      apiKey: 'YOUR_API_KEY'
+    },
+    author: 'bolt.diy',
+    createdAt: '2024-12-28'
+  },
+  {
+    id: '9',
+    name: 'Groq',
+    description: 'High-performance AI inference with ultra-low latency.',
+    longDescription: `
+      Lightning-fast AI processing:
+      • Ultra-low latency
+      • High throughput
+      • Scalable infrastructure
+      • Enterprise support
+      • Performance monitoring
+      • Custom optimization
+    `,
+    website: 'https://groq.com',
+    baseModels: ['ANY'],
+    downloads: 432,
+    configTemplate: {
+      apiKey: 'YOUR_API_KEY'
+    },
+    author: 'bolt.diy',
+    createdAt: '2024-12-28'
+  },
+  {
+    id: '10',
+    name: 'Perplexity',
+    description: 'AI models optimized for natural language understanding and generation.',
+    longDescription: `
+      Advanced language understanding:
+      • Contextual awareness
+      • Natural responses
+      • Knowledge integration
+      • Real-time updates
+      • Accurate citations
+      • Research capabilities
+    `,
+    website: 'https://perplexity.ai',
+    baseModels: ['ANY'],
+    downloads: 567,
+    configTemplate: {
+      apiKey: 'YOUR_API_KEY'
+    },
+    author: 'bolt.diy',
+    createdAt: '2024-12-28'
+  },
+  {
+    id: '11',
+    name: 'HuggingFace',
+    description: 'Open-source AI platform with thousands of models and datasets.',
+    longDescription: `
+      Comprehensive AI ecosystem:
+      • Vast model library
+      • Open-source community
+      • Model hosting
+      • Training infrastructure
+      • Dataset management
+      • Research tools
+    `,
+    website: 'https://huggingface.co',
+    baseModels: ['ANY'],
+    downloads: 1543,
+    configTemplate: {
+      apiKey: 'YOUR_API_KEY'
+    },
+    author: 'bolt.diy',
+    createdAt: '2024-12-28'
   }
 ];
 
