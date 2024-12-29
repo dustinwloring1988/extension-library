@@ -54,7 +54,7 @@ export const mockStarters: Starter[] = [
   },
   {
     id: '3',
-    name: 'DEMOWeb Blog Template',
+    name: 'DEMO Web Blog Template',
     description: 'DEMO A modern, feature-rich blog template built with Next.js and Tailwind CSS',
     longDescription: `A professional blog template that includes:
     • SEO optimization with meta tags and schema markup
@@ -81,7 +81,7 @@ export const mockStarters: Starter[] = [
     ],
     downloads: 0,
     author: 'Bolt Community',
-    preview: 'https://blog-template.bolt-starter.com',
+    preview: 'https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=800&q=80',
     createdAt: new Date().toISOString(),
     repoUrl: 'https://github.com/bolt-starter-templates/blog-template'
   }
