@@ -50,6 +50,7 @@ Project Link: [https://github.com/dustinwloring1988/extension-library](https://g
 - [ ] Additional framework integrations
 - [ ] More Promtps
 - [ ] More Templates
+- [ ] Each tab will be a json file on github
 
 ## 🏆 Acknowledgments
 
