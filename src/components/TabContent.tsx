@@ -5,6 +5,7 @@ import { ModelCard } from './ModelCard';
 import { StarterCard } from './StarterCard';
 import { Modal } from './Modal';
 import { CustomDialog } from './CustomDialog';
+import { ProviderConfigDialog } from './ProviderConfigDialog';
 import { SearchAndFilter } from './SearchAndFilter';
 import { mockPrompts, mockProviders, mockModels, mockStarters } from '../data/mockData';
 import type { TabType, Prompt, Provider, Model, Starter } from '../types';
@@ -18,12 +19,15 @@ export function TabContent({ activeTab }: TabContentProps) {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedFilter, setSelectedFilter] = useState('all');
   const [showCustomDialog, setShowCustomDialog] = useState(false);
+  const [showProviderConfigDialog, setShowProviderConfigDialog] = useState(false);
 
   const handleDownload = async (item: Prompt | Provider | Model | Starter) => {
     if ('repoUrl' in item) {
       window.location.href = `http://localhost:5173/git?url=${encodeURIComponent(item.repoUrl)}`;
     } else if ('systemPrompt' in item && (item.name === 'Optimized' || item.name === 'Default')) {
       setShowCustomDialog(true);
+    } else if ('baseModels' in item) {
+      setShowProviderConfigDialog(true);
     } else {
       console.log('Downloading:', item);
     }
@@ -92,17 +96,13 @@ export function TabContent({ activeTab }: TabContentProps) {
           />
         ))}
         
-        {activeTab === 'providers' && (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {mockProviders.map((provider) => (
-              <ProviderCard
-                key={provider.id}
-                provider={provider}
-                onDownload={handleDownload}
-              />
-            ))}
-          </div>
-        )}
+        {activeTab === 'providers' && mockProviders.map((provider) => (
+          <ProviderCard
+            key={provider.id}
+            provider={provider}
+            onDownload={handleDownload}
+          />
+        ))}
         
         {activeTab === 'models' && (
           <div className="col-span-3 text-center py-12">
@@ -140,6 +140,11 @@ export function TabContent({ activeTab }: TabContentProps) {
       <CustomDialog
         isOpen={showCustomDialog}
         onClose={() => setShowCustomDialog(false)}
+      />
+
+      <ProviderConfigDialog
+        isOpen={showProviderConfigDialog}
+        onClose={() => setShowProviderConfigDialog(false)}
       />
     </>
   );
