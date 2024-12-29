@@ -21,11 +21,6 @@ export function FeatureCard({ feature, onClick, onDownload }: FeatureCardProps) 
             )}
             <h3 className="text-lg font-semibold text-white">{feature.name}</h3>
           </div>
-        </div>
-        
-        <p className="text-sm text-gray-400 flex-grow mb-4">{feature.description}</p>
-        
-        <div className="flex justify-end">
           <button
             onClick={(e) => {
               e.stopPropagation();
@@ -37,6 +32,8 @@ export function FeatureCard({ feature, onClick, onDownload }: FeatureCardProps) 
             <span>Use</span>
           </button>
         </div>
+        
+        <p className="text-sm text-gray-400 flex-grow">{feature.description}</p>
       </div>
     </div>
   );

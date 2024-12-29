@@ -1,5 +1,5 @@
 import React from 'react';
-import { Download, ExternalLink, User, Calendar, CheckCircle2 } from 'lucide-react';
+import { Download, Github, User, Calendar, CheckCircle2 } from 'lucide-react';
 import type { Starter } from '../types';
 
 interface StarterCardProps {
@@ -11,13 +11,27 @@ interface StarterCardProps {
 export function StarterCard({ starter, onDownload, onClick }: StarterCardProps) {
   return (
     <div className="bg-[#1A1A1B] border border-gray-800 rounded-lg p-6 hover:border-purple-500 transition-colors">
-      <div 
-        className="flex items-start space-x-3 cursor-pointer"
-        onClick={onClick}
-      >
+      <div className="flex items-start justify-between mb-4">
         <div className="flex-1">
           <h3 className="text-lg font-semibold text-white">{starter.name}</h3>
           <p className="text-sm text-gray-400">{starter.description}</p>
+        </div>
+        <div className="flex items-center space-x-2 ml-4">
+          <a
+            href={starter.repoUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center w-8 h-8 bg-purple-600 hover:bg-purple-700 rounded text-white text-sm transition-colors"
+          >
+            <Github className="w-4 h-4" />
+          </a>
+          <button
+            onClick={() => onDownload(starter)}
+            className="flex items-center space-x-1 px-3 py-1 bg-purple-600 hover:bg-purple-700 rounded text-white text-sm transition-colors"
+          >
+            <Download className="w-4 h-4" />
+            <span>Import</span>
+          </button>
         </div>
       </div>
 
@@ -53,25 +67,6 @@ export function StarterCard({ starter, onDownload, onClick }: StarterCardProps) 
           <Calendar className="w-4 h-4 mr-1" />
           <span>{new Date(starter.createdAt).toLocaleDateString()}</span>
         </div>
-      </div>
-
-      <div className="mt-4 flex items-center space-x-2">
-        <button
-          onClick={() => onDownload(starter)}
-          className="flex items-center space-x-1 px-3 py-1 bg-purple-600 hover:bg-purple-700 rounded text-white text-sm transition-colors"
-        >
-          <Download className="w-4 h-4" />
-          <span>Import</span>
-        </button>
-        <a
-          href={starter.repoUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center space-x-1 px-3 py-1 bg-purple-600 hover:bg-purple-700 rounded text-white text-sm transition-colors"
-        >
-          <ExternalLink className="w-4 h-4" />
-          <span>GitHub</span>
-        </a>
       </div>
     </div>
   );
