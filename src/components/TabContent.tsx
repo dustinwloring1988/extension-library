@@ -103,16 +103,6 @@ export function TabContent({ activeTab }: TabContentProps) {
             onDownload={handleDownload}
           />
         ))}
-        
-        {activeTab === 'models' && (
-          <div className="col-span-3 text-center py-12">
-            <h3 className="text-xl font-semibold text-gray-400 mb-2 relative inline-flex items-center">
-              Models
-              <span className="ml-2 text-[10px] bg-purple-600 text-white px-1 rounded">Soon</span>
-            </h3>
-            <p className="text-gray-500">We're preparing to launch access to premium AI models. Stay tuned!</p>
-          </div>
-        )}
       </div>
 
       <Modal

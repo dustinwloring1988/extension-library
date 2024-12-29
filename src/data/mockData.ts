@@ -297,28 +297,3 @@ export const mockProviders: Provider[] = [
     }
   }
 ];
-
-export const mockModels: Model[] = [
-  {
-    id: '1',
-    name: 'Open Router',
-    provider: 'Open Router',
-    description: 'Access to premium AI models through a unified API (API key required).',
-    longDescription: `
-      Premium AI models available:
-      • GPT-4 Turbo
-      • Claude 3 Opus
-      • Claude 3 Sonnet
-      • Mistral Large
-      • Anthropic Claude 2
-      • GPT-4 Vision
-      • Google PaLM
-      • Meta Llama 2
-      • Unified API access
-      • Pay-as-you-go pricing
-    `,
-    parameters: 'Various (model dependent)',
-    contextWindow: 128000,
-    downloads: 1543
-  }
-];

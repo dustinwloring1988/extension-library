@@ -9,7 +9,7 @@ interface MainContentProps {
 }
 
 export function MainContent({ activeTab, onTabChange }: MainContentProps) {
-  const tabs: TabType[] = ['starters', 'prompts', 'providers', 'models'];
+  const tabs: TabType[] = ['starters', 'prompts', 'providers'];
 
   return (
     <main className="max-w-7xl mx-auto px-8 py-12">
