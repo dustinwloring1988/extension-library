@@ -22,7 +22,7 @@ export function TabContent({ activeTab }: TabContentProps) {
   const [showCustomDialog, setShowCustomDialog] = useState(false);
   const [showProviderConfigDialog, setShowProviderConfigDialog] = useState(false);
 
-  const handleDownload = async (item: Prompt | Provider | Model | Starter) => {
+  const handleDownload = async (item: Prompt | Provider | Model | Starter | Feature) => {
     if ('repoUrl' in item) {
       const baseUrl = localStorage.getItem('starter_base_url') || 'http://localhost:5173';
       window.location.href = `${baseUrl}/git?url=${encodeURIComponent(item.repoUrl)}`;
@@ -30,12 +30,14 @@ export function TabContent({ activeTab }: TabContentProps) {
       setShowCustomDialog(true);
     } else if ('baseModels' in item) {
       setShowProviderConfigDialog(true);
+    } else if ('type' in item) {
+      setShowCustomDialog(true);
     } else {
       console.log('Downloading:', item);
     }
   };
 
-  const handleItemClick = (item: Prompt | Provider | Model | Starter) => {
+  const handleItemClick = (item: Prompt | Provider | Model | Starter | Feature) => {
     setSelectedItem(item);
   };
 
@@ -140,6 +142,7 @@ export function TabContent({ activeTab }: TabContentProps) {
             key={feature.id}
             feature={feature}
             onClick={() => handleItemClick(feature)}
+            onDownload={() => handleDownload(feature)}
           />
         ))}
       </div>
