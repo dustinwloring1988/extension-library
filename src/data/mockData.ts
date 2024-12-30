@@ -31,6 +31,66 @@ export const mockStarters: Starter[] = [
     repoUrl: 'https://github.com/dustinwloring1988/twitter-clone'
   },
   {
+    id: '4',
+    name: 'DEMO Recipe Template',
+    description: 'DEMO A modern recipe management and sharing platform with beautiful UI and rich features.',
+    longDescription: `
+      Build a feature-rich recipe platform with:
+      • Recipe creation and management
+      • Beautiful recipe layouts
+      • Ingredient lists and scaling
+      • Step-by-step instructions
+      • Image galleries
+      • Search and filtering
+      • Categories and tags
+      • Print-friendly views
+      • Responsive design
+      • Social sharing
+    `,
+    features: [
+      'Recipe management',
+      'Rich media support',
+      'Search functionality',
+      'Responsive design'
+    ],
+    technologies: ['React', 'TypeScript', 'TailwindCSS'],
+    downloads: 0,
+    author: 'dustinwloring1988',
+    preview: 'https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80',
+    createdAt: '2024-12-29',
+    repoUrl: 'https://github.com/bolt-starter-templates/recipe-template'
+  },
+  {
+    id: '5',
+    name: 'DEMO Slidev Template',
+    description: 'DEMO A modern slide deck creation platform using Slidev with developer-friendly features.',
+    longDescription: `
+      Create beautiful presentations with:
+      • Markdown-based slides
+      • Code highlighting
+      • Interactive components
+      • Custom themes
+      • Presenter mode
+      • Export to PDF
+      • Live editing
+      • Slide animations
+      • Developer tools
+      • Version control
+    `,
+    features: [
+      'Markdown support',
+      'Code highlighting',
+      'Interactive elements',
+      'Export options'
+    ],
+    technologies: ['Vue', 'Slidev', 'Markdown'],
+    downloads: 0,
+    author: 'dustinwloring1988',
+    preview: 'https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=800&q=80',
+    createdAt: '2024-12-29',
+    repoUrl: 'https://github.com/bolt-starter-templates/slidev-template'
+  },
+  {
     id: '2',
     name: 'DEMO Basic template',
     description: 'DEMO A basic template for getting started. Made with React, ShadCN and lucide icons.',
