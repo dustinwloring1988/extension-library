@@ -375,6 +375,28 @@ export const mockProviders: Provider[] = [
     },
     author: 'bolt.diy',
     createdAt: '2024-12-28'
+  },
+  {
+    id: '12',
+    name: 'Mistral',
+    description: 'High-performance language models with state-of-the-art capabilities.',
+    longDescription: `
+      Advanced AI model platform:
+      • Multiple model variants
+      • Enterprise-grade reliability
+      • Low latency inference
+      • Custom deployments
+      • Secure API access
+      • Advanced parameter control
+    `,
+    website: 'https://mistral.ai',
+    baseModels: ['ANY'],
+    downloads: 892,
+    configTemplate: {
+      apiKey: 'YOUR_API_KEY'
+    },
+    author: 'bolt.diy',
+    createdAt: '2024-12-28'
   }
 ];
 
